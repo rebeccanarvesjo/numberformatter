@@ -4,7 +4,7 @@
     <div class="form-group form-group-container">
       <label>Enter the sequence you want to make more readable in the input field below:<br /><br /></label>
       <mat-form-field class="example-container">
-        <mat-label>Number to Format</mat-label>
+        <mat-label>Number or Text to Format</mat-label>
         <input type="text" name="inputNumber" matInput [(ngModel)]="inputNumber" placeholder="Ex. 11233"
           (keyup)="formatNumber()" autofocus>
         <mat-hint align="end">Note: Special characters will be removed. Alphanumericals only.</mat-hint>
