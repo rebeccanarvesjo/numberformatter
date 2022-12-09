@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { of } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -13,16 +14,17 @@ export class AppComponent {
 
   constructor() {
     this.separator = 2;
+    this.inputNumber = '';
   }
 
   formatNumber() {
-    //console.log('change occurred!');
-    //console.log(form.value);
-
     let displayArray: string[] = [];
     let cleanedStr: string = '';
-    cleanedStr = this.inputNumber.replace(/[^a-zA-Z0-9 ]/g, '');
-    //console.log(cleanedStr);
+
+    if (this.inputNumber.length != 0) {
+      cleanedStr = this.inputNumber.replace(/[^a-zA-Z0-9 ]/g, '');
+    }
+
     let numArray = [...cleanedStr];
 
     const stringLength = numArray.length;
@@ -30,7 +32,6 @@ export class AppComponent {
     let currElem = '';
 
     for (let i: number = 0; i <= stringLength; i += 2) {
-      //console.log('i: ', i);
       if (this.separator == 5) {
         break;
       }

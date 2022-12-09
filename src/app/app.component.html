@@ -1,12 +1,8 @@
 <div class="container">
-  <h1>Format for Readability!</h1>
-  <div>
-    Struggling to copy that OCR from a PDF bill to your mobile bank? Want to make sure you're
-    transfering the appropriate amount of 0's? Enter your number below!
-  </div>
-
+  <h1>Format for Readability</h1>
   <form #myForm="ngForm" name="myform" novalidate>
     <div class="form-group form-group-container">
+      <label>Enter the sequence you want to make more readable in the input field below:<br /><br /></label>
       <mat-form-field class="example-container">
         <mat-label>Number to Format</mat-label>
         <input type="text" name="inputNumber" matInput [(ngModel)]="inputNumber" placeholder="Ex. 11233"
