@@ -1,0 +1,86 @@
+.container {
+    max-width: 900px;
+    margin: 0rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.separated-numbers {
+    margin: 0 .5rem;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+.separated-numbers:hover {
+    background-color: yellow;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.example-container>* {
+    width: 100%;
+}
+
+.form-group-container {
+    margin-top: 1rem;
+}
+
+/* TODO: Flex around the span so they flow over several lines if necessary */
+.number-container {
+    margin-top: .5rem;
+}
+
+.flex-number-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.separated-numbers {
+    flex: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    padding: 10px 15px;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio {
+    flex: 1fr 1fr;
+    list-style-type: none;
+    padding: 10px 15px;
+    margin: .1rem .7rem;
+}
+
+.info-box {
+    background: #fffbda;
+    padding: .75rem 1.2rem;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
+
+.mat-form-field {
+    text-align: center;
+}
+
+.clicked {
+    outline: 3px dotted greenyellow;
+}
