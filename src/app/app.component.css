@@ -7,8 +7,16 @@
 
 .separated-numbers {
     margin: 0 .5rem;
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+@media screen and (min-width: 480px) {
+    .separated-numbers {
+        margin: 0 .5rem;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
 }
 
 .separated-numbers:hover {
