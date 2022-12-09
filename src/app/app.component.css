@@ -92,3 +92,16 @@ input {
 .clicked {
     outline: 3px dotted greenyellow;
 }
+
+footer {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.link {
+    color: grey;
+}
+
+.link:hover {
+    color: rgb(55, 55, 55);
+}
