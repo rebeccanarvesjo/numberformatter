@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Live and running
 
-Check it out at `https://numberformatter.azurewebsites.net/`
+Check it out at (https://numberformatter.azurewebsites.net/)
 
 ## Development server
 
